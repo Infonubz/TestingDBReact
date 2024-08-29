@@ -241,10 +241,10 @@ function Offers() {
                         />
                       </div>
                     </div> */}
-                    <img
+                    {/* <img
                       src={`http://192.168.90.47:4000${item?.background_image}`}
                       className="w-[80vw] lg:h-[80%] md:h-[12vw] h-[40vw]"
-                    />
+                    /> */}
                   </>
                 ))}
             </div>
@@ -288,17 +288,17 @@ function Offers() {
           <div className="flex">
             {currentoffers.map((item, index) => (
               <div key={index} className="relative flex-shrink-0 mr-[4vw]">
-                <img src={item?.img} className="w-[80vw] h-[45vw]" />
+                {/* <img src={item?.img} className="w-[80vw] h-[45vw]" /> */}
                 <p className="absolute text-[4vw] font-semibold left-[7vw] bottom-[12vw] text-white">
                   {`Valid till ${item?.valid}`}
                 </p>
                 <div className="w-[50vw] h-[7vw] border-dashed flex items-center rounded-[1vw] border-[0.1vw] bg-opacity-20 bg-white border-white absolute left-[7vw] bottom-[3vw] px-[1.5vw] text-white">
                   <p className="text-[5vw] font-bold">{item?.coupon}</p>
-                  <img
+                  {/* <img
                     src={clipboard}
                     className="absolute bottom-[0.2vw] right-[-10vw] h-[7vw] w-[7vw] cursor-pointer"
                     onClick={() => copyCouponCode(item)}
-                  />
+                  /> */}
                 </div>
               </div>
             ))}
