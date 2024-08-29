@@ -857,32 +857,32 @@ const Sidebar = ({ sidebarToggle, share }) => {
   const sharing = useSelector((state) => state.share);
   console.log(sharing, "sharing");
   const logoimage = "file://akritnas/nubiznez/Operator_logos/ss.png";
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // window.location.reload();
-      const fetchData = async () => {
-        try {
-          const place = localStorage.getItem("depature");
-          const response = await axios.get(
-            place === "Chennai"
-              ? "http://192.168.90.43:8090/chennaisrc"
-              : place === "Bangalore"
-              ? "http://192.168.90.43:8090/bangaloresrc"
-              : "http://192.168.90.43:8090/chennaisrc"
-          );
-          dispatch({
-            type: GET_DATA,
-            payload: response.data,
-          });
-        } catch (error) {
-          console.error("Error fetching data:", error);
-        }
-      };
-      fetchData();
-    }, 5000);
-    // 5 * 60 * 1000
-    return () => clearInterval(interval);
-  }, [localStorage.getItem("depature")]);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     // window.location.reload();
+  //     const fetchData = async () => {
+  //       try {
+  //         const place = localStorage.getItem("depature");
+  //         const response = await axios.get(
+  //           place === "Chennai"
+  //             ? "http://192.168.90.43:8090/chennaisrc"
+  //             : place === "Bangalore"
+  //             ? "http://192.168.90.43:8090/bangaloresrc"
+  //             : "http://192.168.90.43:8090/chennaisrc"
+  //         );
+  //         dispatch({
+  //           type: GET_DATA,
+  //           payload: response.data,
+  //         });
+  //       } catch (error) {
+  //         console.error("Error fetching data:", error);
+  //       }
+  //     };
+  //     fetchData();
+  //   }, 5000);
+  //   // 5 * 60 * 1000
+  //   return () => clearInterval(interval);
+  // }, [localStorage.getItem("depature")]);
 
   const isTimeRangeEqual = (range1, range2) => {
     return range1.start === range2.start && range1.end === range2.end;

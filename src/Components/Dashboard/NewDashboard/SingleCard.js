@@ -6,7 +6,7 @@ import { MdEventSeat } from "react-icons/md";
 import lowprice from "../../../assets/lowprice.png";
 import dayjs from "dayjs";
 import { Tooltip } from "antd";
-import logo from "../../../assets/Operator_logos/161.png";
+// import logo from "../../../assets/Operator_logos/161.png";
 import { MdAirlineSeatReclineExtra, MdStarRate } from "react-icons/md";
 import { IoPersonSharp } from "react-icons/io5";
 // import { MdMyLocation } from "react-icons/md";
@@ -520,7 +520,7 @@ export default function SingleCard() {
                       <img src={backdrop} className="h-[3.5vw] w-full" />
                       <div className="absolute top-[0.2vw] right-[9vw] rounded-full">
                         <img
-                          src={logo}
+                          // src={logo}
                           className="w-[2.5vw] h-[2.5vw] rounded-full"
                         />
                       </div>

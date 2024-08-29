@@ -15,7 +15,9 @@ export default function TopTravelledBusRoutes() {
     console.log(encodeURI(sanitizedPath),"techimage");
     return encodeURI(sanitizedPath);
   };
-  
+  const convertedUrl = "file://192.168.90.20/nubiznez/Backend_Team/images/hyderabad.png".replace("file://", "http://"); 
+  console.log(convertedUrl,"convertedUrl");
+  // Replace 'file://' with 'http://'
   return (
     <>
       <div className="mt-[16vw] md:block hidden px-[5vw]">
@@ -33,7 +35,7 @@ export default function TopTravelledBusRoutes() {
                 }}
               >
                 <img
-                  src={sanitizePath(item.image)}
+                  src={convertedUrl}
                   className="h-full w-full p-[0.7vw] rounded-lg"
                   style={{
                     borderRadius: "1.5vw",

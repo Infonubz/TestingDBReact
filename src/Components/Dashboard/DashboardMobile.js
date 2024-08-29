@@ -75,7 +75,7 @@ import Seater from "./BusSeatType/Seater";
 import SemiSleeper from "./BusSeatType/SemiSleeper";
 import "../../Components/Home/test.css";
 import platformlogo from "./Logo";
-import currentlogo from "../../assets/Operator_logos/1.png";
+// import currentlogo from "../../assets/Operator_logos/1.png";
 import tinycolor from "tinycolor2";
 import platformTheme from "./PlatformTheme";
 import platformImages from "./PlatformImages";

@@ -546,28 +546,28 @@ const SidebarMobile = ({ sidebarToggle, share, showAll }) => {
     localStorage.getItem("arrival"),
   ]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const place = localStorage.getItem("depature");
-        const response = await axios.get(
-          place === "Chennai"
-            ? "http://192.168.90.43:8090/chennaisrc"
-            : place === "Bangalore"
-              ? "http://192.168.90.43:8090/bangaloresrc"
-              : "http://192.168.90.43:8090/chennaisrc"
-        );
-        dispatch({
-          type: GET_DATA,
-          payload: response.data,
-        });
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const place = localStorage.getItem("depature");
+  //       const response = await axios.get(
+  //         place === "Chennai"
+  //           ? "http://192.168.90.43:8090/chennaisrc"
+  //           : place === "Bangalore"
+  //             ? "http://192.168.90.43:8090/bangaloresrc"
+  //             : "http://192.168.90.43:8090/chennaisrc"
+  //       );
+  //       dispatch({
+  //         type: GET_DATA,
+  //         payload: response.data,
+  //       });
+  //     } catch (error) {
+  //       console.error("Error fetching data:", error);
+  //     }
+  //   };
 
-    fetchData();
-  }, [localStorage.getItem("depature")]);
+  //   fetchData();
+  // }, [localStorage.getItem("depature")]);
 
   const fulllist = useSelector((state) => state.get_data);
   console.log(fulllist, "searchvaluesearchvalue555");

@@ -145,10 +145,11 @@ const MainNavbar = ({ onTimeChanged, ...inputProps }) => {
     localStorage.setItem("selectdate", formattedDate);
 
     SendTravelDetails(
+      dispatch,
       localStorage.getItem("departure"),
       localStorage.getItem("arrival"),
       localStorage.getItem("selectdate"),
-      dispatch
+      
     );
     // if (busdata) {
     setTraveldetails({

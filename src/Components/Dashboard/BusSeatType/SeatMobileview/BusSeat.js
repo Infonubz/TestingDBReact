@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import SleeperMobile from './SleeperMobile'
 import SemiSleeperMobile from './SemiSleeperMobile'
 import SeaterMobile from './SeaterMobile'
-import IMG from '../../../../assets/platforms/makemytrip.png'
+// import IMG from '../../../../assets/platforms/makemytrip.png'
 import PickUpDrop from './PickUpDrop'
 import unisex_se from "../../../../assets/unisex_se.png";
 import men_se from "../../../../assets/men_se.png";
@@ -143,7 +143,7 @@ const BusSeat = () => {
             <p className=' text-white text-[3.5vw]'>Know your Seats</p>
           </div>
           <div className='flex items-center'>
-            <div> <img src={IMG} className='h-[6vw] w-[6vw] bg-white rounded-full' /></div>
+            {/* <div> <img src={IMG} className='h-[6vw] w-[6vw] bg-white rounded-full' /></div> */}
             <div><p className='text-[5vw] text-white font-bold pl-[1vw]'>MAKE MY TRIP</p></div>
           </div>
         </div>
